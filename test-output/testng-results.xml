@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2630" started-at="2020-04-08T08:55:55Z" finished-at="2020-04-08T08:55:57Z">
+    <groups>
+      <group name="regression">
+        <method signature="TC01_verifyDataIsMissingInTableAndAPI.verifyAllCountriesforWhichCapitalDataIsMissingInTable()[pri:0, instance:myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI@464bee09]" name="verifyAllCountriesforWhichCapitalDataIsMissingInTable" class="myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI"/>
+      </group> <!-- regression -->
+    </groups>
+    <test name="Default test" duration-ms="2630" started-at="2020-04-08T08:55:55Z" finished-at="2020-04-08T08:55:57Z">
+      <class name="myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI@464bee09]" name="startTest" is-config="true" duration-ms="232" started-at="2020-04-08T08:55:55Z" finished-at="2020-04-08T08:55:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI@464bee09]" name="startMethod" is-config="true" duration-ms="4" started-at="2020-04-08T08:55:55Z" finished-at="2020-04-08T08:55:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI.verifyAllCountriesforWhichCapitalDataIsMissingInTable() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="FAIL" signature="verifyAllCountriesforWhichCapitalDataIsMissingInTable()[pri:0, instance:myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI@464bee09]" name="verifyAllCountriesforWhichCapitalDataIsMissingInTable" duration-ms="2214" started-at="2020-04-08T08:55:55Z" finished-at="2020-04-08T08:55:57Z">
+          <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+at java.sql.DriverManager.getConnection(Unknown Source)
+at java.sql.DriverManager.getConnection(Unknown Source)
+at myassessment.DB.FunctionLibrary.getQueryData(FunctionLibrary.java:162)
+at myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI.verifyAllCountriesforWhichCapitalDataIsMissingInTable(TC01_verifyDataIsMissingInTableAndAPI.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.cj.jdbc.exceptions.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllCountriesforWhichCapitalDataIsMissingInTable -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI@464bee09]" name="endTest" is-config="true" duration-ms="384" started-at="2020-04-08T08:55:57Z" finished-at="2020-04-08T08:55:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- myassessment.DB.TC01_verifyDataIsMissingInTableAndAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
