@@ -23,7 +23,7 @@ public class FunctionLibrary extends testBase {
 
 	String url="jdbc:mysql://localhost:3306/FirstDB";
 	String uname="root";
-	String pass="s@g@r1752";
+	String pass="Niit@2019";
 
 
 	public Response  runRestcountriesAPI ()  {  
